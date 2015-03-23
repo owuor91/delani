@@ -7,6 +7,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
 }
 
 h1{
@@ -47,5 +48,16 @@ h1{
 	width: 34%;
 	margin: 60px 33% 70px 33%;
 	text-align: center;
+}
 
+#services{
+	background-image: url('../assets/backgrounds/s_image.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1366px 347px;
+    background-position: center; 
+	color:#fff;
+	height: 500px;
+	text-align: center;
+	padding: 60px 33% 70px 33%;
 }
