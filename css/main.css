@@ -12,6 +12,7 @@ body{
 
 h1{
 	font-size: 40px;
+	text-align: center;
 }
 
 #home{
@@ -60,4 +61,35 @@ h1{
 	height: 500px;
 	text-align: center;
 	padding: 60px 33% 70px 33%;
+}
+
+#what{
+	width: 94%;
+	margin: 0 0% 100px 6%;
+}
+
+#what div{
+	width:29%;
+	margin-right: 3%;
+	float:left;
+	text-align: center;
+}
+
+#what div p{
+	font-size: 13px;
+	text-align: justify;
+}
+
+#what span{
+	font-weight: bold;
+	font-size: 22px;
+}
+
+#portfolio img{
+	width: 275px;
+	height: 225px;
+}
+
+#portfolio ul li{
+	display: inline;
 }
