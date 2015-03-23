@@ -4,6 +4,7 @@
 	<title>Delani Studios</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -13,7 +14,7 @@
 			<div><span>TO DELANI STUDIOS</span><br><br>
 				AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT
 			</div>
-			<div><img src="assets/mouse_click.png"></div>
+			<div><a href="#about"><img src="assets/mouse_click.png"></a></div>
 		</section>	
 		<section id="about">
 			<h1>ABOUT US</h1>
@@ -74,13 +75,13 @@
 		<footer>
 			<ul>
 				<li><a href="http://www.behance.net"><img src="assets/social_icons/behance.png"></a></li>
-				<li><a href="http://www."><img src="assets/social_icons/dribble.png"></a></li>
+				<li><a href="http://www.dribbble.com"><img src="assets/social_icons/dribble.png"></a></li>
 				<li><a href="http://www.facebook.com"><img src="assets/social_icons/facebook.png"></a></li>
-				<li><a href="http://www."><img src="assets/social_icons/flickr.png"></a></li>
-				<li><a href="http://www.plus.google.com"><img src="assets/social_icons/g_plus.png"></a></li>
-				<li><a href="http://www."><img src="assets/social_icons/pinterest.png"></a></li>
+				<li><a href="http://www.flickr.com"><img src="assets/social_icons/flickr.png"></a></li>
+				<li><a href="https://plus.google.com"><img src="assets/social_icons/g_plus.png"></a></li>
+				<li><a href="http://www.pinterest.com"><img src="assets/social_icons/pinterest.png"></a></li>
 				<li><a href="http://www.skype.com"><img src="assets/social_icons/skype.png"></a></li>
-				<li><a href="http://www."><img src="assets/social_icons/stumble_upon.png"></a></li>
+				<li><a href="http://www.stumbleupon"><img src="assets/social_icons/stumble_upon.png"></a></li>
 				<li><a href="http://www.twitter.com"><img src="assets/social_icons/twitter.png"></a></li>
 				<li><a href="http://www.youtube.com"><img src="assets/social_icons/you_tube.png"></a></li>
 			</ul>
@@ -89,5 +90,21 @@
 			2015
 		</footer>	
 	</div>
+	<script>
+      	$(function() {
+  		$('a[href*=#]:not([href=#])').click(function() {
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      	var target = $(this.hash);
+      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      	if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
 </body>
 </html>
