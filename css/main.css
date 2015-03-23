@@ -65,7 +65,8 @@ h1{
 
 #what{
 	width: 94%;
-	margin: 0 0% 100px 6%;
+	margin: 0 0 100px 6%;
+	padding-bottom: 100px !important;
 }
 
 #what div{
@@ -85,6 +86,13 @@ h1{
 	font-size: 22px;
 }
 
+#portfolio{
+	width: 95%;
+	margin-left: 4%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
 #portfolio img{
 	width: 275px;
 	height: 225px;
@@ -92,4 +100,5 @@ h1{
 
 #portfolio ul li{
 	display: inline;
+	margin-right: 20px;
 }
